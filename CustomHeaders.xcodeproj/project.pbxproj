@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F4DF1CF41E9EF1AA00CDFF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF1CF31E9EF1AA00CDFF53 /* AppDelegate.swift */; };
-		F4DF1CF61E9EF1AA00CDFF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF1CF51E9EF1AA00CDFF53 /* ViewController.swift */; };
+		F4DF1CF61E9EF1AA00CDFF53 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF1CF51E9EF1AA00CDFF53 /* MainVC.swift */; };
 		F4DF1CF91E9EF1AA00CDFF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DF1CF71E9EF1AA00CDFF53 /* Main.storyboard */; };
 		F4DF1CFB1E9EF1AA00CDFF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DF1CFA1E9EF1AA00CDFF53 /* Assets.xcassets */; };
 		F4DF1CFE1E9EF1AA00CDFF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DF1CFC1E9EF1AA00CDFF53 /* LaunchScreen.storyboard */; };
 		F4DF1D091E9EF1AA00CDFF53 /* CustomHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF1D081E9EF1AA00CDFF53 /* CustomHeadersTests.swift */; };
 		F4DF1D141E9EF1AA00CDFF53 /* CustomHeadersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF1D131E9EF1AA00CDFF53 /* CustomHeadersUITests.swift */; };
+		F4DF1D231E9EF27C00CDFF53 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF1D211E9EF27C00CDFF53 /* HeaderView.swift */; };
+		F4DF1D241E9EF27C00CDFF53 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DF1D221E9EF27C00CDFF53 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F4DF1CF01E9EF1AA00CDFF53 /* CustomHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DF1CF31E9EF1AA00CDFF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4DF1CF51E9EF1AA00CDFF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4DF1CF51E9EF1AA00CDFF53 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F4DF1CF81E9EF1AA00CDFF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4DF1CFA1E9EF1AA00CDFF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DF1CFD1E9EF1AA00CDFF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		F4DF1D0F1E9EF1AA00CDFF53 /* CustomHeadersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomHeadersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DF1D131E9EF1AA00CDFF53 /* CustomHeadersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeadersUITests.swift; sourceTree = "<group>"; };
 		F4DF1D151E9EF1AA00CDFF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DF1D211E9EF27C00CDFF53 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F4DF1D221E9EF27C00CDFF53 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,9 @@
 		F4DF1CF21E9EF1AA00CDFF53 /* CustomHeaders */ = {
 			isa = PBXGroup;
 			children = (
+				F4DF1D271E9EF2B200CDFF53 /* Controller */,
+				F4DF1D251E9EF28900CDFF53 /* View */,
 				F4DF1CF31E9EF1AA00CDFF53 /* AppDelegate.swift */,
-				F4DF1CF51E9EF1AA00CDFF53 /* ViewController.swift */,
 				F4DF1CF71E9EF1AA00CDFF53 /* Main.storyboard */,
 				F4DF1CFA1E9EF1AA00CDFF53 /* Assets.xcassets */,
 				F4DF1CFC1E9EF1AA00CDFF53 /* LaunchScreen.storyboard */,
@@ -123,6 +128,23 @@
 				F4DF1D151E9EF1AA00CDFF53 /* Info.plist */,
 			);
 			path = CustomHeadersUITests;
+			sourceTree = "<group>";
+		};
+		F4DF1D251E9EF28900CDFF53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF1D211E9EF27C00CDFF53 /* HeaderView.swift */,
+				F4DF1D221E9EF27C00CDFF53 /* HeaderView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F4DF1D271E9EF2B200CDFF53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF1CF51E9EF1AA00CDFF53 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +215,7 @@
 				TargetAttributes = {
 					F4DF1CEF1E9EF1AA00CDFF53 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XYRU9GS26N;
 						ProvisioningStyle = Automatic;
 					};
 					F4DF1D031E9EF1AA00CDFF53 = {
@@ -235,6 +258,7 @@
 				F4DF1CFE1E9EF1AA00CDFF53 /* LaunchScreen.storyboard in Resources */,
 				F4DF1CFB1E9EF1AA00CDFF53 /* Assets.xcassets in Resources */,
 				F4DF1CF91E9EF1AA00CDFF53 /* Main.storyboard in Resources */,
+				F4DF1D241E9EF27C00CDFF53 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DF1CF61E9EF1AA00CDFF53 /* ViewController.swift in Sources */,
+				F4DF1CF61E9EF1AA00CDFF53 /* MainVC.swift in Sources */,
+				F4DF1D231E9EF27C00CDFF53 /* HeaderView.swift in Sources */,
 				F4DF1CF41E9EF1AA00CDFF53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XYRU9GS26N;
 				INFOPLIST_FILE = CustomHeaders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bryan-Fein.CustomHeaders";
@@ -424,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XYRU9GS26N;
 				INFOPLIST_FILE = CustomHeaders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bryan-Fein.CustomHeaders";
